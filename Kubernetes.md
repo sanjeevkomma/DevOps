@@ -29,6 +29,9 @@
 * ReplicaSet ensures that a specified number of pod replicas are running at any given time
 * Container runs inside the Pod
 * Pod provides grouping for Containers
+* As soon as we deploy app / image into Kubernetes, it creates new Replica Set
+* Kubernetes uses deployment strategy called "Rolling updates" to make sure Zeor downtime deployments 
+* The rolling update strategy is a gradual process that allows you to update your Kubernetes system with only a minor effect on performance and no downtime
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -80,6 +83,7 @@
 * $ kubectl delete pods <pod_id>
 * $ kubectl edit deployment
 * $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
+* $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
 * $ kubectl get events
 * $ kubectl get events --sort-by=.metadata.creationTimestamp
 * $ kubectl get pods
