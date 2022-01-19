@@ -26,6 +26,9 @@
 * Each Node can have mulitple Pods, and each Pod can have multiple Containers
 * A Node is a worker machine in Kubernetes and may be either a virtual or a physical machine, depending on the cluster
 * Kubernetes cluster is a set of nodes that run containerized applications
+* ReplicaSet ensures that a specified number of pod replicas are running at any given time
+* Container runs inside the Pod
+* Pod provides grouping for Containers
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -44,7 +47,8 @@
 * Pod = Smallest Deployable Unit in Kubernetes
 * Deployment =
 * Service = 
-* Replica Set = 
+* Replica = An exact copy or model of something
+* Replica Set = It creates / maintains replica of Pods. It ensures that a specified number of pod replicas are running at any given time
 * Master Node = It manages the cluster
 * Worker Node = It runs your application
 * EKS = Elastic Kubernetes Service - AWS
@@ -55,6 +59,9 @@
 * Kubernetes Cluster = A set of nodes that run containerized applications
 * Helmsman ( Kubernetes Logo ) = A person who steers a ship or boat
 * kubectl = Kube Controller
+* Pull the Image
+* Create the Container
+* Start the Container
 
 
 # Commands
@@ -67,16 +74,20 @@
 * $ kubectl convert --help
 * $ kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE === It will create "deployment", "replicaset" & "pod"
 * $ kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080 === It will create "service"
-* $ kubectl scale deployment
+* $ kubectl scale deployment hello-world-rest-api --replicas=3
 * $ kubectl autoscale deployment
-* $ kubectl delete pod
+* $ kubectl delete pods <pod_id>
 * $ kubectl edit deployment
-* $ kubectl set image deployment
+* $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
 * $ kubectl get events
+* $ kubectl get events --sort-by=.metadata.creationTimestamp
 * $ kubectl get pods
 * $ kubectl get pods -o wide
 * $ kubectl explain pods
 * $ kubectl get replicaset
+* $ kubectl get replicaset -o wide
+* $ kubectl explain replicaset
+* $ kubectl get rs
 * $ kubectl get deployment
 * $ kubectl get service
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
