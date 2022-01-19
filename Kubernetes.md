@@ -32,6 +32,7 @@
 * As soon as we deploy app / image into Kubernetes, it creates new Replica Set
 * Kubernetes uses deployment strategy called "Rolling updates" to make sure Zeor downtime deployments 
 * The rolling update strategy is a gradual process that allows you to update your Kubernetes system with only a minor effect on performance and no downtime
+* Rolling update strategy means that It updates one Pod ( Pod instance ) at a time. It launches new Pod for V2 version, then it reduces no of Pods for V1 version and then increases no of Pods for V2 version and so on
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -66,6 +67,7 @@
 * Create the Container
 * Start the Container
 * Pod Instance = 
+* Rolling update strategy = It updates one Pod ( Pod instance ) at a time
 
 
 # Commands
