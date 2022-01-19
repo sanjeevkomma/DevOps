@@ -62,6 +62,7 @@
 * Pull the Image
 * Create the Container
 * Start the Container
+* Pod Instance = 
 
 
 # Commands
