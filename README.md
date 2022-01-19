@@ -19,12 +19,6 @@
 | Sonatype NEXUS, JFRog Artifactory, CloudRepo  | Artifact Management tools  |
 | AccelQ , Appvance , Testim.io   | Codeless Test Automation tools  |
 
-# Deployment Models ( On Premise -> VM -> Container -> Serverless ) 
-1. On Premise
-2. VM ( Virtual Machine )
-3. Container
-4. Serverless
-
 # Terminology
 * CI - Continuous Integration 
 * CD - Continuous Deployment 
