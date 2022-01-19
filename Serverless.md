@@ -6,7 +6,7 @@
 * [Web and Application Servers for Java](https://www.baeldung.com/java-servers)
 
 # Traditional Servers
-1. Tomcat
+1. [Tomcat](https://tomcat.apache.org/)
 2. JBoss
 3. Weblogic
 4. Websphere
