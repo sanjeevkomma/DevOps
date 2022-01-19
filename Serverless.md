@@ -1,5 +1,5 @@
 # Definition
-* Serverless =
+* Serverless = It does't mean that there is no server. It means that you are not responsible for managing & provisioning the servers. The servers are managed & provisioned by cloud provider
 
 # To Read
 * [Spring Serverless](https://spring.io/serverless)
