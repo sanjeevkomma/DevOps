@@ -38,3 +38,8 @@
 # Reference
 * [What is Serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)
 * [Serverless Architecture](https://www.aquasec.com/cloud-native-academy/serverless-architecture/serverless-architecture-platforms-benefits-best-practices/#serverless-architecture-platforms-benefits-best-practices-Serverless-Platforms)
+
+# Image
+1. Virtual Server VS Container
+* ![image](https://user-images.githubusercontent.com/7721150/150400639-9e4c1f2b-8cdf-4b64-9c60-e533983ef373.png)
+
