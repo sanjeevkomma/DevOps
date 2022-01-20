@@ -250,6 +250,9 @@ docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 * ![image](https://user-images.githubusercontent.com/7721150/150086447-7a6f6d22-7a7b-482a-8e93-a54e8385978a.png)
 6. Kubernetes Deployments
 * ![image](https://user-images.githubusercontent.com/7721150/150133878-21630440-8324-4b09-be64-f20ac4da09f6.png)
+7. Kubernetes Cluster
+* ![image](https://user-images.githubusercontent.com/7721150/150386716-b78cb047-4184-4949-8e56-255fda4b99fa.png)
+
 
 
 
