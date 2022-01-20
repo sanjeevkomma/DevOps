@@ -123,6 +123,7 @@
 * [Docker Engine overview](https://docs.docker.com/engine/)
 * [Build and Ship any Application Anywhere](https://hub.docker.com/)
 * [Overview of Docker Compose](https://docs.docker.com/compose/)
+* [openjdk Docker Image](https://hub.docker.com/_/openjdk)
 
 # Docker 
 1. Traditional Deployment
