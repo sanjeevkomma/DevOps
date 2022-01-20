@@ -44,7 +44,8 @@
 * Host Port : Container Port = -p 5000 : 5000
 * Docker Desktop = Docker Client + Docker Daemon ( Docker Engine )
 * Docker Client = 
-* Docker Daemon = Docker Enginen 
+* Docker Daemon = Docker Engine
+* Docker Engine =  
 * Orchestration = Arrangement
 * Automation
 * Container Based Applications =
