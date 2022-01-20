@@ -31,6 +31,7 @@
 * Docker official Images are curated set of docker repositories hosted on Docker Hub
 * Spring-Boot creates the docker image using Spring Boot maven plugin configured in pom.xml
 * Docker Containers Are Everywhere: Linux, Windows, Data center, Cloud, Serverless, etc
+* Docker Hub is the world's easiest way to create, manage, and deliver your teams' container applications
 
 # Docker Components
 1. Docker Client
