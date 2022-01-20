@@ -66,7 +66,7 @@
 * Pull the Image
 * Create the Container
 * Start the Container
-* Pod Instance = 
+* Pod Instance = POD is wrapper for set of Containers
 * Rolling update strategy = It updates one Pod ( Pod instance ) at a time
 
 
