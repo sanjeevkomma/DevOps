@@ -2,8 +2,8 @@
 * Serverless = It does't mean that there is no server. It means that you are not responsible for managing & provisioning the servers. The servers are managed & provisioned by cloud provider
 
 # To Read
-* [Spring Serverless](https://spring.io/serverless)
-* [Web and Application Servers for Java](https://www.baeldung.com/java-servers)
+* Containers can run for prolonged periods of time. Serverless functions typically run for a short period of time (minutes or seconds) and are shut down as soon as they finish processing the current event or data
+
 
 # Deployment Models ( On Premise -> VM -> Container -> Serverless ) 
 1. On Premise
@@ -34,6 +34,8 @@
 
 # Tutorial
 * [Tomcat docker image](https://hub.docker.com/_/tomcat)
+* [Spring Serverless](https://spring.io/serverless)
+* [Web and Application Servers for Java](https://www.baeldung.com/java-servers)
 
 # Reference
 * [What is Serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)
