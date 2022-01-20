@@ -32,6 +32,14 @@
 * Spring-Boot creates the docker image using Spring Boot maven plugin configured in pom.xml
 * Docker Containers Are Everywhere: Linux, Windows, Data center, Cloud, Serverless, etc
 
+# Docker Components
+1. Docker Client
+2. Docker Server
+3. Docker Machine
+4. Docker Hub
+5. Docker Compose
+6. Docker Engine
+
 # Terminology
 * Docker
 * [Kubernetes](https://kubernetes.io/) = Container Orchestration
