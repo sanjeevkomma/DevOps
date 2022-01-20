@@ -32,6 +32,9 @@
 2. Azure Container Instance
 3. Google Cloud Run
 
+# Tutorial
+* [Tomcat docker image](https://hub.docker.com/_/tomcat)
+
 # Reference
 * [What is Serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)
 * [Serverless Architecture](https://www.aquasec.com/cloud-native-academy/serverless-architecture/serverless-architecture-platforms-benefits-best-practices/#serverless-architecture-platforms-benefits-best-practices-Serverless-Platforms)
