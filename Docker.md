@@ -30,6 +30,7 @@
 * Azure provides a service called "Azure Container Service" for Docker
 * Docker official Images are curated set of docker repositories hosted on Docker Hub
 * Spring-Boot creates the docker image using Spring Boot maven plugin configured in pom.xml
+* Docker Containers Are Everywhere: Linux, Windows, Data center, Cloud, Serverless, etc
 
 # Terminology
 * Docker
