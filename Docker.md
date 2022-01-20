@@ -119,7 +119,8 @@
 * $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml
 * $ docker-compose --version = It help to run / launch multiple docker containers using YAML file 
 * $ docker-compose up = it will run docker-compose.yaml
-
+* $ docker build -t python-app = To create Docker image of python application
+* $ docker run python-app === To run docker image 
 # Tutorial
 * [What is Docker?](https://www.youtube.com/watch?v=-LeV_c1zG-s)
 * [Docker Tutorial](https://www.javatpoint.com/docker-tutorial)
