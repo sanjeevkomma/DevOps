@@ -17,6 +17,21 @@
 3. Weblogic
 4. Websphere
 
+# Container Platforms
+
+# Serverless Platforms
+1. AWS Lambda
+2. Azure Functions
+3. Google Functions
+4. Amazon Fargate
+5. Amazon Aurora Serverless
+6. Azure CosmosDB
+
+# Serverless Container Platforms
+1. AWS Fargate
+2. Azure Container Instance
+3. Google Cloud Run
+
 # Reference
 * [What is Serverless?](https://www.youtube.com/watch?v=vxJobGtqKVM)
 * [Serverless Architecture](https://www.aquasec.com/cloud-native-academy/serverless-architecture/serverless-architecture-platforms-benefits-best-practices/#serverless-architecture-platforms-benefits-best-practices-Serverless-Platforms)
