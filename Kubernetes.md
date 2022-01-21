@@ -33,6 +33,11 @@
 * Kubernetes uses deployment strategy called "Rolling updates" to make sure Zeor downtime deployments 
 * The rolling update strategy is a gradual process that allows you to update your Kubernetes system with only a minor effect on performance and no downtime
 * Rolling update strategy means that It updates one Pod ( Pod instance ) at a time. It launches new Pod for V2 version, then it reduces no of Pods for V1 version and then increases no of Pods for V2 version and so on
+* In Kubernetes, instance means Pod instance
+* Deployment ensures that release upgrade switch from V1 to V2 happens with out a hitch. We dont need to have downtime when we release new version of application
+* Each POD has its own IP Address
+* Load will be distributed among all the PODs using load balancer
+* In Kubernetes, service provides external interface to applications which are running inside Pods
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -48,9 +53,9 @@
 * Node = Virtual Server / Vitual Machine in Kubernetes cluster
 * Cluster = Master Node(s) + Worker Node(s)
 * Container =
-* Pod = Smallest Deployable Unit in Kubernetes
-* Deployment =
-* Service = 
+* Pod = Smallest Deployable Unit in Kubernetes, where containers reside in it
+* Deployment = Deployment ensures that release upgrade switch from V1 to V2 happens with out a hitch
+* Service = It provides external interface to the applications which are running inside Pods
 * Replica = An exact copy or model of something
 * Replica Set = It creates / maintains replica of Pods. It ensures that a specified number of pod replicas are running at any given time
 * Master Node = It manages the cluster
@@ -82,7 +87,7 @@
 * $ kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080 === It will create "service"
 * $ kubectl scale deployment hello-world-rest-api --replicas=3
 * $ kubectl autoscale deployment
-* $ kubectl delete pods <pod_id>
+* $ kubectl delete pod <pod_id>
 * $ kubectl edit deployment
 * $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
 * $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=in28min/hello-world-rest-api:0.0.2.RELEASE
