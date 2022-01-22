@@ -1,6 +1,8 @@
 # Definition
 
 # To Read
+* Jenkins is a Java application
+* Jenkins used for continuous integration & delivery and continuous 
 
 # Installation
 * [Jenkins download](https://www.jenkins.io/)
