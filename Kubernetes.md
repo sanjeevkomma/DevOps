@@ -55,7 +55,7 @@
 * Cluster = Master Node(s) + Worker Node(s)
 * Container =
 * Pod = Smallest Deployable Unit in Kubernetes, where containers reside in it
-* Deployment = Deployment ensures that release upgrade switch from V1 to V2 happens with out a hitch
+* Deployment = Deployment ensures that release upgrade switch from V1 to V2 happens with out a hitch. We don't need to have downtime when we release new version of application.
 * Service = It provides external interface to the applications which are running inside Pods
 * Replica = An exact copy or model of something
 * Replica Set = It creates / maintains replica of Pods. It ensures that a specified number of pod replicas are running at any given time
