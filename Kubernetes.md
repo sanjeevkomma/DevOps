@@ -38,6 +38,7 @@
 * Each POD has its own IP Address
 * Load will be distributed among all the PODs using load balancer
 * In Kubernetes, service provides external interface to applications which are running inside Pods
+* POD is wrapper for set of Containers. Each POD has its own IP Address, Label, Annotation etc
 
 # Features
 * Auto scaling --- can scale up / down the containers
