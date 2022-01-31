@@ -30,7 +30,7 @@
 * Container runs inside the Pod
 * Pod provides grouping for Containers
 * As soon as we deploy app / image into Kubernetes, it creates new Replica Set
-* Kubernetes uses deployment strategy called "Rolling updates" to make sure Zeor downtime deployments 
+* Kubernetes uses deployment strategy called "Rolling updates" to make sure Zero downtime deployments 
 * The rolling update strategy is a gradual process that allows you to update your Kubernetes system with only a minor effect on performance and no downtime
 * Rolling update strategy means that It updates one Pod ( Pod instance ) at a time. It launches new Pod for V2 version, then it reduces no of Pods for V1 version and then increases no of Pods for V2 version and so on
 * In Kubernetes, instance means Pod instance
@@ -39,7 +39,15 @@
 * Load will be distributed among all the PODs using load balancer
 * In Kubernetes, service provides external interface to applications which are running inside Pods
 * POD is wrapper for set of Containers. Each POD has its own IP Address, Label, Annotation etc
-* 
+* In practice, Replica Set is always tied with a specific release version ( V1 version, V2 version etc )
+* In kubernetes world , Pod is a throw away unit. It can be deleted / created ...
+* Service will be created with an unique IP Address ( LoadBalancer IP Address ), when we expose the deployment to Kubernetes
+* Service type can be Load Balancer
+* Loadbalancer will distribute the load among the Pods in Kubernetes
+* Each Cluster has its own unique IP Address 
+* Each Service / Load Balancer has its own unique IP Address
+* Each Pod has its own IP Address
+* Protocol can be "TCP"
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -75,6 +83,9 @@
 * Start the Container
 * Pod Instance = POD is wrapper for set of Containers
 * Rolling update strategy = It updates one Pod ( Pod instance ) at a time
+* Service IP Address = LoadBalancer IP Address
+* Protocol = TCP
+* Port = Node Port / Target Port
 
 
 # Commands
