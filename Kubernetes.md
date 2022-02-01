@@ -42,12 +42,20 @@
 * In practice, Replica Set is always tied with a specific release version ( V1 version, V2 version etc )
 * In kubernetes world , Pod is a throw away unit. It can be deleted / created ...
 * Service will be created with an unique IP Address ( LoadBalancer IP Address ), when we expose the deployment to Kubernetes
-* Service type can be Load Balancer
 * Loadbalancer will distribute the load among the Pods in Kubernetes
 * Each Cluster has its own unique IP Address 
-* Each Service / Load Balancer has its own unique IP Address
+* Each Service / Load Balancer has its own unique IP Address & Port number
 * Each Pod has its own IP Address
 * Protocol can be "TCP"
+* The role of service is providing always available external interface to the applications which are running inside the pods
+* Service allows the applications to receive traffic through permanant IP Address
+* Service remains up & running. It provides constant frontend interface irrespective of what ever changes happening in the background which are all the pods where application is running
+* Kubernetes provides excellent integration with all cloud providers specific loadbalancers
+* Loadbalancer is type of Service provided by all cloud provides such as GCP, AWS, AZure
+* Service will be load balancing between Pods running at that time
+* Each cluster has its own IP Address
+* External Load balancer will be created automatically by Kubernetes for each Service when service gets created
+* Kubernetes is integrated with GCP to create / provide load balancer
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -86,6 +94,7 @@
 * Service IP Address = LoadBalancer IP Address
 * Protocol = TCP
 * Port = Node Port / Target Port
+* Service type = External Load Balancer
 
 
 # Commands
