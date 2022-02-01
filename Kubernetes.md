@@ -60,6 +60,10 @@
 * ClusterIP service is the service which can be accessed inside the Cluster
 * "Workloads" is specific to Service in GCP
 * etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines
+* Each Worker Node can have any number of PODs
+* etcd is a CNCF project, which used by Kubernetes, ROOK, CoreDNS, M3
+* Master Node does NOT run any application related Containers
+* Kubernetes can run any Containers, specific to OCI ( Open Container Interface ), not only Docker
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -99,6 +103,9 @@
 * Protocol = TCP
 * Port = Node Port / Target Port
 * Service type = External Load Balancer
+* OCI = Open Container Interface / Open Containers Initiative
+* CNCF = Cloud Native Computing Foundation
+* CRI = Container Runtime Interface
 
 # Services
 1. LoadBalancer
@@ -107,9 +114,15 @@
 
 # Components of Master Node
 1. [etcd](https://etcd.io/docs/v3.5/) = etcd is distributed database
-2. API Server = kube-api server. Kubectl talks to Kubernetes Cluster. Google Clould Console talks to Kubernetes Cluster. 
-3. Scheduler = kube-scheduler. It will schdule the Pods onto Nodes
-4. Controller Manager = kube-controller-manager. It manages health of Cluster and make sure actual state of Cluster matches with desired state of Cluster
+2. API Server ( kube-api server ) = Kubectl talks to Kubernetes Cluster. Google Clould Console talks to Kubernetes Cluster. 
+3. Scheduler ( kube-scheduler )= It will schdule the Pods onto Nodes
+4. Controller Manager ( kube-controller-manager ) = It manages health of Cluster and make sure actual state of Cluster matches with desired state of Cluster
+
+# Components of Worker Node
+1. Node Agent ( kubelet ) = It communicates with Master Node
+2. Networking Component ( kube-proxy ) = It helps to expose the deployement as service into Node 
+3. Container Runtime ( CRI - for ex : Docker ) = It helps to run Container inside Pod
+4. PODs ( Multiple Pods running containers ) 
 
 # Commands
 * $ curl -LO "https://dl.k8s.io/release/v1.23.0/bin/windows/amd64/kubectl.exe"
