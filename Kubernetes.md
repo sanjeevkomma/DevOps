@@ -59,6 +59,7 @@
 * Loadbalancer itself is a service provided by Cloud Provider
 * ClusterIP service is the service which can be accessed inside the Cluster
 * "Workloads" is specific to Service in GCP
+* etcd is a strongly consistent, distributed key-value store that provides a reliable way to store data that needs to be accessed by a distributed system or cluster of machines
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -103,6 +104,12 @@
 1. LoadBalancer
 2. ClusterIP
 3. NodePort
+
+# Components of Master Node
+1. [etcd](https://etcd.io/docs/v3.5/) = etcd is distributed database
+2. API Server = kube-api server. Kubectl talks to Kubernetes Cluster. Google Clould Console talks to Kubernetes Cluster. 
+3. Scheduler = kube-scheduler. It will schdule the Pods onto Nodes
+4. Controller Manager = kube-controller-manager. It manages health of Cluster and make sure actual state of Cluster matches with desired state of Cluster
 
 # Commands
 * $ curl -LO "https://dl.k8s.io/release/v1.23.0/bin/windows/amd64/kubectl.exe"
@@ -286,7 +293,9 @@ docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 * ![image](https://user-images.githubusercontent.com/7721150/150133878-21630440-8324-4b09-be64-f20ac4da09f6.png)
 7. Master Node
 * ![image](https://user-images.githubusercontent.com/7721150/151943805-73c6086e-8ea2-4918-ac94-3e1f92612069.png)
-8. Kubernetes Cluster
+8. Worker Node
+* ![image](https://user-images.githubusercontent.com/7721150/151947632-44c70b13-ca62-4c69-beeb-8a46a68f0a4d.png)
+9. Kubernetes Cluster
 * ![image](https://user-images.githubusercontent.com/7721150/150386716-b78cb047-4184-4949-8e56-255fda4b99fa.png)
 
 
