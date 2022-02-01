@@ -56,6 +56,9 @@
 * Each cluster has its own IP Address
 * External Load balancer will be created automatically by Kubernetes for each Service when service gets created
 * Kubernetes is integrated with GCP to create / provide load balancer
+* Loadbalancer itself is a service provided by Cloud Provider
+* ClusterIP service is the service which can be accessed inside the Cluster
+* "Workloads" is specific to Service in GCP
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -96,6 +99,10 @@
 * Port = Node Port / Target Port
 * Service type = External Load Balancer
 
+# Services
+1. LoadBalancer
+2. ClusterIP
+3. NodePort
 
 # Commands
 * $ curl -LO "https://dl.k8s.io/release/v1.23.0/bin/windows/amd64/kubectl.exe"
@@ -277,7 +284,9 @@ docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 * ![image](https://user-images.githubusercontent.com/7721150/150086447-7a6f6d22-7a7b-482a-8e93-a54e8385978a.png)
 6. Kubernetes Deployments
 * ![image](https://user-images.githubusercontent.com/7721150/150133878-21630440-8324-4b09-be64-f20ac4da09f6.png)
-7. Kubernetes Cluster
+7. Master Node
+* ![image](https://user-images.githubusercontent.com/7721150/151943805-73c6086e-8ea2-4918-ac94-3e1f92612069.png)
+8. Kubernetes Cluster
 * ![image](https://user-images.githubusercontent.com/7721150/150386716-b78cb047-4184-4949-8e56-255fda4b99fa.png)
 
 
