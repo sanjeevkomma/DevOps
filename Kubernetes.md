@@ -152,6 +152,7 @@
 * $ kubectl get deployment
 * $ kubectl get service
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
+* $ kubectl get componentstatuses
 
 #### Commands
 ```
@@ -273,6 +274,10 @@ docker push in28min/mmv2-currency-exchange-service:0.0.12-SNAPSHOT
 # Tutorial
 * [Kubernetes doc](https://kubernetes.io/docs/concepts/overview/)
 * [minikube start](https://minikube.sigs.k8s.io/docs/start/)
+
+# Questions
+* What happens if master node goes down ?
+Ans : Applications can continue to be working as master node doest get involved in serving the requests
 
 # Reference
 * [announcement](https://cncf.io/news/announcement/2015/07/new-cloud-native-computing-foundation-drive-alignment-among-container)
