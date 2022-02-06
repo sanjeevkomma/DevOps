@@ -123,6 +123,7 @@
 * $ docker-compose up = it will run docker-compose.yaml
 * $ docker build -t python-app = To create Docker image of python application
 * $ docker run python-app === To run docker image 
+* $ docker login 
 
 # Create, Run Docker Image in Local Machine and Push to Docker Hub
 1. Have "Dockerfile" file in project root directory
