@@ -64,6 +64,8 @@
 * etcd is a CNCF project, which used by Kubernetes, ROOK, CoreDNS, M3
 * Master Node does NOT run any application related Containers
 * Kubernetes can run any Containers, specific to OCI ( Open Container Interface ), not only Docker
+* Environment variable ( for ex : SERVICE_NAME_SERVICE_HOST ) for each Service ( for ex : SERVICE_NAME ) will be created by Kubernetes automatically when we launch up new POD
+* When we launch up new POD, all the existing service information is made available to Pod as Environment variable
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -159,6 +161,7 @@
 * $ kubectl get all  ==== It will list Pods, Services, Deployments & Replica Sets of the Cluster
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
 * $ kubectl get componentstatuses
+* $ kubectl get services --watch
 
 #### Commands
 ```
