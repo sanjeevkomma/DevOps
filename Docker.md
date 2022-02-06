@@ -74,6 +74,7 @@
 
 
 # Commands
+* $ docker version
 * $ docker --version
 * $ docker-compose --version
 * $ docker-machine ip  = default machine with IP 192.168.99.100
@@ -122,6 +123,15 @@
 * $ docker-compose up = it will run docker-compose.yaml
 * $ docker build -t python-app = To create Docker image of python application
 * $ docker run python-app === To run docker image 
+
+# Create Docker Image
+1. $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml 
+
+# Docker Data Set
+1. Hyper-V
+2. WSL 2
+3. Windows Containers
+
 # Tutorial
 * [What is Docker?](https://www.youtube.com/watch?v=-LeV_c1zG-s)
 * [Docker Tutorial](https://www.javatpoint.com/docker-tutorial)
