@@ -126,20 +126,7 @@
 
 # Create Docker Image
 1. POM.XML changes
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<image>
-						<name>in28min/mmv2-${project.artifactId}:${project.version}</name>
-					</image>
-					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
-				</configuration>				
-			</plugin>
-		</plugins>
-	</build>
+* ![image](https://user-images.githubusercontent.com/7721150/152677862-2bba6d33-9ff2-4a49-8548-54cffcc459bc.png)
 2. $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml 
 
 # Docker Data Set
