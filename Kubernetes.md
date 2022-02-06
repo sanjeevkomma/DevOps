@@ -146,6 +146,7 @@
 * $ kubectl get events
 * $ kubectl get events --sort-by=.metadata.creationTimestamp
 * $ kubectl get pods
+* $ kubectl get po
 * $ kubectl get pods -o wide
 * $ kubectl explain pods
 * $ kubectl get replicaset
@@ -154,6 +155,8 @@
 * $ kubectl get rs
 * $ kubectl get deployment
 * $ kubectl get service
+* $ kubectl get svc
+* $ kubectl get all  ==== It will list Pods, Services, Deployments & Replica Sets of the Cluster
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
 * $ kubectl get componentstatuses
 
