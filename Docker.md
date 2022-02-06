@@ -124,10 +124,12 @@
 * $ docker build -t python-app = To create Docker image of python application
 * $ docker run python-app === To run docker image 
 
-# Create Docker Image
-1. POM.XML changes
-* ![image](https://user-images.githubusercontent.com/7721150/152677862-2bba6d33-9ff2-4a49-8548-54cffcc459bc.png)
-2. $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml 
+# Create, Run Docker Image in Local Machine and Push to Docker Hub
+1. Have "Dockerfile" file in project root directory
+2. $ docker build -t sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE .
+3. $ docker run -p 8080:8080 -t sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
+4. $ docker push sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
+5. [Spring Boot docker reference](https://spring.io/guides/gs/spring-boot-docker/)
 
 # Docker Data Set
 1. Hyper-V
