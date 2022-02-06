@@ -125,7 +125,22 @@
 * $ docker run python-app === To run docker image 
 
 # Create Docker Image
-1. $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml 
+1. POM.XML changes
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<name>in28min/mmv2-${project.artifactId}:${project.version}</name>
+					</image>
+					<pullPolicy>IF_NOT_PRESENT</pullPolicy>
+				</configuration>				
+			</plugin>
+		</plugins>
+	</build>
+2. $ spring-boot:build-image = It creates the docker image using Spring Boot maven plugin configured in pom.xml 
 
 # Docker Data Set
 1. Hyper-V
