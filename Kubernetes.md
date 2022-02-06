@@ -135,6 +135,9 @@
 * $ kubectl create deployment hello-world-rest-api --image=in28min/hello-world-rest-api:0.0.1.RELEASE === It will create "deployment", "replicaset" & "pod"
 * $ kubectl expose deployment hello-world-rest-api --type=LoadBalancer --port=8080 === It will create "service"
 * $ kubectl scale deployment hello-world-rest-api --replicas=3
+* $ kubectl create deployment spring-boot-h2-database --image=sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
+* $ kubectl expose deployment spring-boot-h2-database --type=LoadBalancer --port=8080
+* $ kubectl scale deployment spring-boot-h2-database --replicas=3
 * $ kubectl autoscale deployment
 * $ kubectl delete pod <pod_id>
 * $ kubectl edit deployment
