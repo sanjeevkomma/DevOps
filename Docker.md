@@ -126,11 +126,14 @@
 * $ docker login 
 
 # Create, Run Docker Image in Local Machine and Push to Docker Hub
+# Approach using "Dockerfile" 
 1. Have "Dockerfile" file in project root directory
 2. $ docker build -t sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE .
 3. $ docker run -p 8080:8080 -t sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 4. $ docker push sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 5. [Spring Boot docker reference](https://spring.io/guides/gs/spring-boot-docker/)
+# Approach using maven plugin in "Spring Boot" POM.XML
+1. 
 
 # Docker Data Set
 1. Hyper-V
