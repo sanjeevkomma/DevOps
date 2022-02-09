@@ -132,7 +132,7 @@
 3. $ docker run -p 8080:8080 -t sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 4. $ docker push sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 5. [Spring Boot docker reference](https://spring.io/guides/gs/spring-boot-docker/)
-# Approach using maven plugin in "Spring Boot" POM.XML
+# Approach using maven plugin in "Spring Boot" POM.XML [ No need of Dockerfile ]
 1. POM.XML changes
 * ![image](https://user-images.githubusercontent.com/7721150/153161545-2a3ed2bc-f166-4915-b810-5c5e5b3d88e7.png)
 2. Eclipse Run Build
