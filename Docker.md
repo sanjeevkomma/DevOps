@@ -133,7 +133,11 @@
 4. $ docker push sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 5. [Spring Boot docker reference](https://spring.io/guides/gs/spring-boot-docker/)
 # Approach using maven plugin in "Spring Boot" POM.XML
-1. 
+1. POM.XML changes
+* ![image](https://user-images.githubusercontent.com/7721150/153161545-2a3ed2bc-f166-4915-b810-5c5e5b3d88e7.png)
+2. Eclipse Run Build
+* ![image](https://user-images.githubusercontent.com/7721150/153161862-017405b3-44b0-4548-a467-832d805d514b.png)
+3. 
 
 # Docker Data Set
 1. Hyper-V
