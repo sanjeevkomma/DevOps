@@ -137,7 +137,10 @@
 * ![image](https://user-images.githubusercontent.com/7721150/153161545-2a3ed2bc-f166-4915-b810-5c5e5b3d88e7.png)
 2. Eclipse Run Build
 * ![image](https://user-images.githubusercontent.com/7721150/153161862-017405b3-44b0-4548-a467-832d805d514b.png)
-3. 
+3. $ docker run -p 8080:8080 -t docker.io/sanjeevkomma/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
+4. $ docker run -p 8080:8080 -t docker.io/sanjeevkomma/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+5. $ docker push docker.io/sanjeevkomma/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
+6. $ docker push docker.io/sanjeevkomma/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
 
 # Docker Data Set
 1. Hyper-V
