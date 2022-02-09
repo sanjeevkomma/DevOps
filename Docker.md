@@ -138,7 +138,7 @@
 2. Eclipse Run Build
 * ![image](https://user-images.githubusercontent.com/7721150/153161862-017405b3-44b0-4548-a467-832d805d514b.png)
 3. $ docker run -p 8080:8080 -t docker.io/sanjeevkomma/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
-4. $ docker run -p 8080:8080 -t docker.io/sanjeevkomma/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
+4. $ docker run -p 8100:8100 -t docker.io/sanjeevkomma/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
 5. $ docker push docker.io/sanjeevkomma/mmv2-currency-exchange-service:0.0.11-SNAPSHOT
 6. $ docker push docker.io/sanjeevkomma/mmv2-currency-conversion-service:0.0.11-SNAPSHOT
 
