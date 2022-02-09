@@ -66,6 +66,7 @@
 * Kubernetes can run any Containers, specific to OCI ( Open Container Interface ), not only Docker
 * Environment variable ( for ex : SERVICE_NAME_SERVICE_HOST ) for each Service ( for ex : SERVICE_NAME ) will be created by Kubernetes automatically when we launch up new POD
 * When we launch up new POD, all the existing service information is made available to Pod as Environment variable
+* Every micro-service is treated as "Service" in Kubernetes Cluster
 
 # Features
 * Auto scaling --- can scale up / down the containers
@@ -101,7 +102,7 @@
 * Start the Container
 * Pod Instance = POD is wrapper for set of Containers
 * Rolling update strategy = It updates one Pod ( Pod instance ) at a time
-* Service IP Address = LoadBalancer IP Address
+* Service IP Address = LoadBalancer IP Address ( Which is public IP Address, can be used to access the Service )
 * Protocol = TCP
 * Port = Node Port / Target Port
 * Service type = External Load Balancer
@@ -156,7 +157,13 @@
 * $ kubectl explain replicaset
 * $ kubectl get rs
 * $ kubectl get deployment
+* $ kubectl get deployment currency-exchange -o yaml
+* $ kubectl get deployment currency-exchange -o yaml >>deployment.yaml
 * $ kubectl get service
+* $ kubectl get service currency-exchange -o yaml
+* $ kubectl get service currency-exchange -o yaml >>service.yaml
+* $ kubectl diff -f deployment.yaml
+* $ kubectl apply -f deployment.yaml
 * $ kubectl get svc
 * $ kubectl get all  ==== It will list Pods, Services, Deployments & Replica Sets of the Cluster
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
@@ -274,6 +281,7 @@ kubectl get configmap
 
 kubectl get configmap currency-conversion -o yaml >> configmap.yaml
 
+watch curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 watch -n 0.1 curl http://34.66.241.150:8100/currency-conversion-feign/from/USD/to/INR/quantity/10
 
 docker push in28min/mmv2-currency-conversion-service:0.0.12-SNAPSHOT
