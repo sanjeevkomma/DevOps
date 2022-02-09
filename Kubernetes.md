@@ -67,13 +67,18 @@
 * Environment variable ( for ex : SERVICE_NAME_SERVICE_HOST ) for each Service ( for ex : SERVICE_NAME ) will be created by Kubernetes automatically when we launch up new POD
 * When we launch up new POD, all the existing service information is made available to Pod as Environment variable
 * Every micro-service is treated as "Service" in Kubernetes Cluster
+* YAML file is the example of Declarative Way
+* Environment Variable helps Micro services communication
+* Each micro-service has its own Environment Variable, which helps for Micro services communication
+* Config Map is that where we have Centralized Configuration
 
 # Features
 * Auto scaling --- can scale up / down the containers
-* Service Discovery --- It helps microservice to find another microservice
+* Service Discovery --- It helps microservice to find another microservice using Environment Variable ( default Environment Variable / custom Environment Variable )
 * Load balancer --- distribute load among containers ( instances of micro service )
 * Self healing ---
 * Zero downtime deployments --- release new version without downtime
+* Config Map = Centralized Configuration
 
 
 # Terminology
@@ -109,6 +114,7 @@
 * OCI = Open Container Interface / Open Containers Initiative
 * CNCF = Cloud Native Computing Foundation
 * CRI = Container Runtime Interface
+* Config Map = Centralized Configuration
 
 # Services
 1. LoadBalancer
@@ -163,12 +169,21 @@
 * $ kubectl get service currency-exchange -o yaml
 * $ kubectl get service currency-exchange -o yaml >>service.yaml
 * $ kubectl diff -f deployment.yaml
-* $ kubectl apply -f deployment.yaml
+* $ kubectl apply -f deployment.yaml === It helps to deploy micro-services using YAML file into Kubernetes cluster
 * $ kubectl get svc
-* $ kubectl get all  ==== It will list Pods, Services, Deployments & Replica Sets of the Cluster
+* $ kubectl get all  === It will list Pods, Services, Deployments & Replica Sets of the Cluster
 * $ kubectl describe pod hello-world-rest-api-687d9c7bc7-f4d9g  
 * $ kubectl get componentstatuses
 * $ kubectl get services --watch
+* $ kubectl delete all -l app=currency-exchange === It will delete POD,Service, Replica Set & Deployment of app
+* $ kubectl logs <pod-id>
+* $ kubectl logs -f <pod-id>
+* $ kubectl create configmap currency-conversion --from-literal=CURRENCY_EXCHANGE_URI=http://currency-exchange
+* $ kubectl get configmap
+* $ kubectl get configmap currency-conversion
+* $ kubectl get configmap currency-conversion -o yaml
+* $ kubectl get configmap currency-conversion -o yaml >>configmap.yaml
+   
 
 #### Commands
 ```
