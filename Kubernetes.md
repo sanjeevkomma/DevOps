@@ -73,12 +73,14 @@
 * Config Map is that where we have Centralized Configuration
 
 # Features
-* Auto scaling --- can scale up / down the containers
+* Auto Scaling --- can scale up / down the containers
 * Service Discovery --- It helps microservice to find another microservice using Environment Variable ( default Environment Variable / custom Environment Variable )
-* Load balancer --- distribute load among containers ( instances of micro service )
-* Self healing ---
+* Load Balancer --- distribute load among containers ( instances of micro service )
+* Self Healing ---
 * Zero downtime deployments --- release new version without downtime
-* Config Map = Centralized Configuration
+* Centralized Configuration = Config Map
+* Centralized Logging
+* Centralized Monitoring
 
 
 # Terminology
@@ -115,6 +117,9 @@
 * CNCF = Cloud Native Computing Foundation
 * CRI = Container Runtime Interface
 * Config Map = Centralized Configuration
+* Kubernetes Cluster = 
+* Kubernetes Node = 
+* Kubernetes Container = 
 
 # Services
 1. LoadBalancer
