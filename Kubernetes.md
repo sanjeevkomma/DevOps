@@ -120,6 +120,8 @@
 * Kubernetes Cluster = 
 * Kubernetes Node = 
 * Kubernetes Container = 
+* Liveness probe = to know when to restart a container
+* Readiness probe = to decide when the container is available for accepting traffic
 
 # Services
 1. LoadBalancer
