@@ -6,7 +6,8 @@
 * By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production
 
 # Kubernetes
-* Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. * It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available
+* Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
+* It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available
 
 # Installation
 * [Install Kubernetes](https://kubernetes.io/docs/tasks/tools/)
