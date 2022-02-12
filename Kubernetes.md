@@ -84,7 +84,7 @@
 * Service Discovery --- It helps microservice to find another microservice using Environment Variable ( default Environment Variable / custom Environment Variable )
 * Load Balancer --- distribute load among containers ( instances of micro service )
 * Self Healing ---
-* Zero downtime deployments --- release new version without downtime
+* Zero downtime deployments --- release new version without downtime --- Liveness Probe & Readiness Probe
 * Centralized Configuration = Config Map
 * Centralized Logging = Spring Sleuth will be used to trace the request flow among micro services in logs using trace id 
 * Centralized Monitoring = 
@@ -206,6 +206,10 @@
 * $ kubectl get configmap currency-conversion
 * $ kubectl get configmap currency-conversion -o yaml
 * $ kubectl get configmap currency-conversion -o yaml >>configmap.yaml
+* $ kubectl rollout history deployment currency-conversion === It tells number of deployments & history of deployment 
+* $ kubectl rollout undo deployment currency-conversion --to-revision=1
+
+
    
 
 #### Commands
@@ -370,6 +374,9 @@ Ans : Applications can continue to be working as master node doest get involved 
 * ![image](https://user-images.githubusercontent.com/7721150/151947632-44c70b13-ca62-4c69-beeb-8a46a68f0a4d.png)
 9. Kubernetes Cluster
 * ![image](https://user-images.githubusercontent.com/7721150/150386716-b78cb047-4184-4949-8e56-255fda4b99fa.png)
+10. Kubernetes Liveness Probe & Readiness Probe
+* ![image](https://user-images.githubusercontent.com/7721150/153720890-aa268d1d-b591-4587-ad0d-56fbd4b86eff.png)
+
 
 
 
