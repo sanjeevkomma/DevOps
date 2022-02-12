@@ -80,7 +80,7 @@
 * Config Map is that where we have Centralized Configuration
 
 # Features
-* Auto Scaling --- can scale up / down the containers
+* Auto Scaling --- can scale up / scale down the pods based on the load of the application
 * Service Discovery --- It helps microservice to find another microservice using Environment Variable ( default Environment Variable / custom Environment Variable )
 * Load Balancer --- distribute load among containers ( instances of micro service )
 * Self Healing ---
@@ -170,7 +170,11 @@
 * $ kubectl create deployment spring-boot-h2-database --image=sanjeevkomma/spring-boot-h2-database:0.0.1.RELEASE
 * $ kubectl expose deployment spring-boot-h2-database --type=LoadBalancer --port=8080
 * $ kubectl scale deployment spring-boot-h2-database --replicas=3
-* $ kubectl autoscale deployment
+* $ kubectl autoscale deployment currency-exchange --min=1 --max=3 --cpu-percent=70 === It will do horizontal auto scaling
+* $ kubectl get hpa === It will tell auto scaling information of the deployments
+* $ kubectl top pod === It will tell CPU & Memory utilization of each Pod
+* $ kubectl top nodes === It will tell CPU & Memory utilization of each Node
+* $ kubectl delete hpa currency-exchange === It will delete horizontal auto scaling
 * $ kubectl delete pod <pod_id>
 * $ kubectl edit deployment
 * $ kubectl set image deployment hello-world-rest-api hello-world-rest-api=DUMMY_IMAGE:TEST
