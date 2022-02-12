@@ -79,9 +79,17 @@
 * Self Healing ---
 * Zero downtime deployments --- release new version without downtime
 * Centralized Configuration = Config Map
-* Centralized Logging
-* Centralized Monitoring
+* Centralized Logging = Spring Sleuth will be used to trace the request flow among micro services in logs using trace id 
+* Centralized Monitoring = 
 
+# GKE Centralized Monitoring Dashboard
+1. Cluster
+2. Namespace
+3. Node
+4. Workload
+5. Service
+6. Pod
+7. Container
 
 # Terminology
 * Kubernetes Cluster = A set of Nodes that run containerized applications
@@ -120,6 +128,7 @@
 * Kubernetes Cluster = 
 * Kubernetes Node = 
 * Kubernetes Container = 
+* Namespace = 
 * Liveness probe = to know when to restart a container
 * Readiness probe = to decide when the container is available for accepting traffic
 
