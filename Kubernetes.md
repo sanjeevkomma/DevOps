@@ -84,7 +84,7 @@
 * Service Discovery --- It helps microservice to find another microservice using Environment Variable ( default Environment Variable / custom Environment Variable )
 * Load Balancer --- distribute load among containers ( instances of micro service )
 * Self Healing ---
-* Zero downtime deployments --- release new version without downtime --- Liveness Probe & Readiness Probe
+* Zero downtime deployments --- release new version without downtime --- Liveness Probe & Readiness Probe are used
 * Centralized Configuration = Config Map
 * Centralized Logging = Spring Sleuth will be used to trace the request flow among micro services in logs using trace id 
 * Centralized Monitoring = 
