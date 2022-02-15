@@ -40,3 +40,4 @@
 * [List of DevOps Tools 2022](https://www.qentelli.com/thought-leadership/insights/devops-tools)
 
 # Reference
+* [Waterfall to Agile to DevOps](https://www.youtube.com/watch?v=hnk006-Vw9g&list=PLBBog2r6uMCS0FX6Ym_8NYeTNykUF5970&index=4)
