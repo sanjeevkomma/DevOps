@@ -9,17 +9,17 @@
 # Languages for DevOps
 
 # DevOps Tools
-| #Tools | #Type |
+| #Type | #Tools |
 | :---: | :---: | 
-| GitHub, Bitbucket, GitLab  | Version Control tools |
-| Docker, Kubernetes , Mesos  | Container Management tools |
-| Prometheus, Grafana , Dynatrace, AppDynamics   | Application Performance Monitoring tools |
-| Splunk, Datadog, Sensu   | Deployment & Server Monitoring tools  |
-| Chef, Puppet, Ansible   | Configuration Management tools |
-| Bamboo, Jenkins, IBM UrbanCode   | CI / Deployment Automation tools  |
-| Test.ai , Ranorex , Selenium   | Test Automation tools  |
-| Sonatype NEXUS, JFRog Artifactory, CloudRepo  | Artifact Management tools  |
-| AccelQ , Appvance , Testim.io   | Codeless Test Automation tools  |
+|  Version Control tools | GitHub, Bitbucket, GitLab |
+|  Container Management tools | Docker, Kubernetes , Mesos |
+|  Application Performance Monitoring tools  | Prometheus, Grafana , Dynatrace, AppDynamics |
+|  Deployment & Server Monitoring tools  | Splunk, Datadog, Sensu  |
+|  Configuration Management tools  | Chef, Puppet, Ansible |
+|  CI / Deployment Automation tools  | Bamboo, Jenkins, IBM UrbanCode  |
+|  Test Automation tools  | Test.ai , Ranorex , Selenium  |
+|  Artifact Management tools | Sonatype NEXUS, JFRog Artifactory, CloudRepo  |
+|  Codeless Test Automation tools  | AccelQ , Appvance , Testim.io  |
 
 # Terminology
 * CI - Continuous Integration 
