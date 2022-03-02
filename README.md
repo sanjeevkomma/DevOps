@@ -1,5 +1,6 @@
 # Definition
 * DevOps =
+* Approach = Waterfall to Agile to DevOps
 
 # DevOps = Development + Operations 
 
