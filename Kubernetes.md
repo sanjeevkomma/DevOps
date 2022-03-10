@@ -4,6 +4,7 @@
 * Docker is an open platform for developing, shipping and running applications. 
 * Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications. 
 * By taking advantage of Docker’s methodologies for shipping, testing, and deploying code quickly, you can significantly reduce the delay between writing code and running it in production
+* [Kubernetes for CI/CD](https://try.digitalocean.com/kubernetes-in-minutes/?utm_campaign=apac_brand_kw_en_cpc&utm_adgroup=digitalocean_kubernetes_bmm&_keyword=digitalocean%20kubernetes&_device=c&_adposition=&utm_content=conversion&utm_medium=cpc&utm_source=google&gclid=CjwKCAiA4KaRBhBdEiwAZi1zzjP-MyWdzJJBwvLfoH9vDcpOb4U2D7Dj7ug3fZjiHUgXYa0Hdu70ixoCg8oQAvD_BwE)
 
 # Kubernetes
 * Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
