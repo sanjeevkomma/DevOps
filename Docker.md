@@ -43,6 +43,7 @@
 
 # Terminology
 * Docker
+* OCI = Open Container Initiative
 * [Kubernetes](https://kubernetes.io/) = Container Orchestration
 * Kubernetes VS Docker
 * Docker Registry = [Docker Hub](https://hub.docker.com/)
