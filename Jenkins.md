@@ -5,7 +5,7 @@
 
 # To Read
 * Jenkins is a Java application
-* Jenkins used for continuous integration & delivery and continuous 
+* Jenkins used for continuous integration & continuous delivery 
 
 # Installation
 * [Jenkins download](https://www.jenkins.io/)
