@@ -142,9 +142,11 @@
 * Readiness probe = to decide when the container is available for accepting traffic
 
 # Services
-1. LoadBalancer
-2. ClusterIP
-3. NodePort
+|SNo| #ervice  | ##Intent |
+| :---: | :---: | :---: |
+| 1 | LoadBalancer | |
+| 2 | ClusterIP | |
+| 3 | NodePort | |
 
 # Components of Master Node
 1. [etcd](https://etcd.io/docs/v3.5/) = etcd is distributed database
@@ -186,6 +188,7 @@
 * $ kubectl get pods
 * $ kubectl get po
 * $ kubectl get pods -o wide
+* $ kubectl exec mypod -- date
 * $ kubectl explain pods
 * $ kubectl get replicaset
 * $ kubectl get replicaset -o wide
