@@ -9,6 +9,7 @@
 * Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation. 
 * It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available
 * [DigitalOcean Kubernetes for CI/CD](https://try.digitalocean.com/kubernetes-in-minutes/?utm_campaign=apac_brand_kw_en_cpc&utm_adgroup=digitalocean_kubernetes_bmm&_keyword=digitalocean%20kubernetes&_device=c&_adposition=&utm_content=conversion&utm_medium=cpc&utm_source=google&gclid=CjwKCAiA4KaRBhBdEiwAZi1zzjP-MyWdzJJBwvLfoH9vDcpOb4U2D7Dj7ug3fZjiHUgXYa0Hdu70ixoCg8oQAvD_BwE)
+* [Helm -- The package manager for Kubernetes](https://helm.sh/)
 
 # Installation
 * [Install Kubernetes](https://kubernetes.io/docs/tasks/tools/)
