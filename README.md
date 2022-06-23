@@ -18,7 +18,7 @@
 |4 |  Prometheus  |   |
 |5 |  Grafana  |  |
 |6 |  Dynatrace |   |
-|7 |  AppDynamics  |   |
+|7 |  [AppDynamics](https://www.appdynamics.com/)  |   |
 |8 |  Datadog |   |
 |9 |  Sensu  |   |
 |10 |  Chef  |   |
