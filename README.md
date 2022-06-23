@@ -9,7 +9,31 @@
 
 # Languages for DevOps
 
-# DevOps Tools
+# DevOps Tool
+|#SNo| #Tool | #Intent |
+| :---:| :---: | :---: | 
+|1 |  Docker |  |
+|2 |  Kubernetes |  |
+|3 |  Mesos  |  |
+|4 |  Prometheus  |   |
+|5 |  Grafana  |  |
+|6 |  Dynatrace |   |
+|7 |  AppDynamics  |   |
+|8 |  Datadog |   |
+|9 |  Sensu  |   |
+|10 |  Chef  |   |
+|11 |  Bamboo  |   |
+|12 |  Ansible  |   |
+|13 |  Jenkins  |   |
+|14 |  IBM UrbanCode  |   |
+|15 |  Sonatype NEXUS  |   |
+|16 |  JFRog Artifactory  |   |
+|17 | CloudRepo  |   |
+|18 |  AccelQ  |   |
+|19 |  Appvance |   |
+
+
+# DevOps Types of Tools
 |#SNo| #Type | #Tools |
 | :---:| :---: | :---: | 
 |1 |  Version Control tools | GitHub, Bitbucket, GitLab |
